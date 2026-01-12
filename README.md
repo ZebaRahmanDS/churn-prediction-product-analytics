@@ -1,52 +1,56 @@
-# churn-prediction-product-analytics
-Customer churn prediction and segmentation using product usage data
-
 # Customer Churn Prediction & Product Analytics
 
 ## Problem Statement
 Customer churn is a major challenge for subscription-based products.
-Understanding which users are likely to churn and why enables targeted
-retention strategies and improved product decisions.
-
-This project focuses on building a churn prediction pipeline using
-customer behavior and usage features.
+This project focuses on predicting customer churn using behavioral,
+demographic, and usage features to support data-driven retention strategies.
 
 ---
 
 ## Objective
-- Explore customer usage and behavioral patterns
+- Explore customer usage and engagement patterns
 - Identify key churn drivers
 - Build classification models to predict churn risk
-- Segment users to support retention strategies
+- Compare interpretable and tree-based approaches
 
 ---
 
 ## Dataset
-- Public customer churn dataset
-- Features include demographics, product usage, and engagement metrics
+- Telco Customer Churn Dataset (public)
+- Contains customer demographics, service usage, billing information,
+  and churn labels.
 
 ---
 
 ## Methodology
-1. Data exploration and preprocessing
-2. Feature engineering
-3. Train–test split
-4. Model development using logistic regression and tree-based models
-5. Model evaluation using classification metrics
-6. Customer segmentation based on churn risk
+1. Data cleaning and preprocessing
+2. Feature encoding and scaling
+3. Train–test split with stratification
+4. Baseline modeling using Logistic Regression
+5. Advanced modeling using Random Forest
+6. Model evaluation using classification metrics and ROC-AUC
+7. Model comparison and interpretation
 
 ---
 
 ## Models Used
 - Logistic Regression
-- Random Forest / Gradient Boosting
+- Random Forest
 
 ---
 
 ## Evaluation Metrics
-- Accuracy
 - Precision, Recall, F1-score
 - ROC-AUC
+
+---
+
+## Results Summary
+- Logistic Regression provides a strong interpretable baseline.
+- Random Forest improves predictive performance by capturing non-linear
+  relationships between features.
+- The project demonstrates trade-offs between interpretability and accuracy
+  in churn prediction problems.
 
 ---
 
@@ -54,7 +58,7 @@ customer behavior and usage features.
 - Python
 - Pandas, NumPy
 - Scikit-learn
-- Matplotlib / Seaborn
+- Matplotlib
 - Jupyter Notebook
 
 ---
@@ -62,9 +66,7 @@ customer behavior and usage features.
 ## Business Use Case
 - Identify high-risk churn customers
 - Support targeted retention campaigns
-- Provide product teams with actionable churn insights
+- Provide actionable insights to product and growth teams
 
 ---
-
-## Project Structure
 
